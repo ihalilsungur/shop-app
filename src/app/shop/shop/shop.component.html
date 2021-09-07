@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+<br>
+<br><br><br><br>
+<div class="container pt-400 mb-5" >
+  <div class="row">
+    <div class="col-3">
+      <app-category [categories]="categories" (sendCategories)='test($event)'></app-category>
+    </div>
+    <div class="col-9">
+        <app-product [products]="products"  [selectedCategory]="selectedCategory"></app-product>
+    </div>
+  </div>
+</div>
+<!-- <div *ngFor="let item of categories">{{item.name}}</div> -->
+
